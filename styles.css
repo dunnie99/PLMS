@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.top {
+    text-align: center;
+
+}
+
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: rgb(234, 238, 5);
+}
+
+.description {
+    font-style: italic;
+    font-weight: 200;
+    width: 60%;
+    text-align: center;
+    margin-left: 250px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+
+#bookingSlot{
+    display: inline;
+    margin-left: 250px;
+    justify-content: space-evenly;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+}
+
+
+button{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 18px;
+    border-radius: 5px;
+    margin: 3px, 0;
+    text-decoration: none;
+    align-items: center;
+    font-weight: bold;
+    background: #c1c7c6;
+    color: rgb(1, 6, 7);
+    align-items: center;
+
+}
+
+.slot{
+    display: inline-grid;
+    margin: 3px;
+    
+}
+
+.LargeSlot{
+    display: inline-grid;
+    margin: 3px;
+}
+
+table{
+    width: 100%;
+    border: 1px solid black;
+}
+
+.searchCar{
+    width: 40%;
+    height: 40%;
+}
+

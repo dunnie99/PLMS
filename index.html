@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Lot System</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js"></script>
+</head>
+    <body>
+        <div class="top">
+            <nav>
+                <img src="./png/logo1.png" alt="[logo]" width="150px">
+                <ul>
+                    <li><a href="#description">ABOUT</a></li>
+                    <li><a href="#parkingTable">HISTORY</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </nav>
+            <h1>PARKING SLOT MANAGEMENT</h1><br/>
+            <p id="description" class="description text-center">
+                The parking lot has 20 slots in total. 12 slots can only accommodate
+                small vehicles, And the rest of the 8 slots can accommodate both small and bigger vehicles.
+                The parking fee for the first 12 slots is ₦2 per minute and the parking fee for the last 8 slots ₦3.50k per minute.
+            </p>
+        </div><br>
+        
+            <div id="bookingSlot">
+                <h3>SMALL VEHICLES</h3>
+                <div class="slot">
+                    <button id="0" class="btn" onclick="getSlot(0)">
+                        SLOT 1
+                    </button>
+                </div>
+                <div class="slot">
+                    <button id="1" class="btn" onclick="getSlot(1)">
+                        SLOT 2
+                    </button>
+                </div>
+                <div class="slot">
+                    <button id="2" class="btn" onclick="getSlot(2)">
+                        SLOT 3
+                    </button>
+                </div>
+                <div class="slot">
+                    <button id="3" class="btn" onclick="getSlot(3)">
+                        SLOT 4
+                    </button>
+                </div><br>
+                <div class="slot">
+                    <button id="4" class="btn" onclick="getSlot(4)">
+                        SLOT 5
+                    </button>
+                </div>
+                <div class="slot">
+                    <button id="5" class="btn" onclick="getSlot(5)">
+                        SLOT 6
+                    </button>
+                </div>
+                <div class="slot">
+                    <button id="6" class="btn" onclick="getSlot(6)">
+                        SLOT 7
+                    </button>
+                </div>
+                <div class="slot">
+                    <button id="7" class="btn" onclick="getSlot(7)">
+                        SLOT 8
+                    </button>
+                </div><br>
+                <div class="slot">
+                    <button id="8" class="btn" onclick="getSlot(8)">
+                        SLOT 9
+                    </button>
+                </div>
+                <div class="slot">
+                    <button id="9" class="btn" onclick="getSlot(9)">
+                        SLOT 10
+                    </button>
+                </div>
+                <div class="slot">
+                    <button id="10" class="btn" onclick="getSlot(10)">
+                        SLOT 11
+                    </button>
+                </div>
+                <div class="slot">
+                    <button id="11" class="btn" onclick="getSlot(11)">
+                        SLOT 12
+                    </button>
+                </div><br><br>
+
+                <h3>LARGE VEHICLES</h3>
+                <div class="LargeSlot">
+                    <button id="12" class="btn" onclick="getSlot(12)">
+                        SLOT 13
+                    </button>
+                </div>
+                <div class="LargeSlot">
+                    <button id="13" class="btn" onclick="getSlot(13)">
+                        SLOT 14
+                    </button>
+                </div>
+                <div class="LargeSlot">
+                    <button id="14" class="btn" onclick="getSlot(14)">
+                        SLOT 15
+                    </button>
+                </div>
+                <div class="LargeSlot">
+                    <button id="15" class="btn" onclick="getSlot(15)">
+                        SLOT 16
+                    </button>
+                </div><br>
+                
+                <div class="LargeSlot">
+                    <button id="16" class="btn" onclick="getSlot(16)">
+                        SLOT 17
+                    </button>
+                </div>
+                <div class="LargeSlot">
+                    <button id="17" class="btn" onclick="getSlot(17)">
+                        SLOT 18
+                    </button>
+                </div>
+                <div class="LargeSlot">
+                    <button id="18" class="btn" onclick="getSlot(18)">
+                        SLOT 19
+                    </button>
+                </div>
+                <div class="LargeSlot">
+                    <button id="19" class="btn" onclick="getSlot(19)">
+                        SLOT 20
+                    </button>
+                </div>
+            </div>
+
+        <div class="carLists">
+            <h4 class="textTenter">List of Cars in Parking Lot</h4>
+            <input type="text" class="searchCar" id="searchInput" placeholder="Search..."><br>
+
+            <table class="carTable" id="parkingTable">
+                <thead class="text-white" id="tableHead">
+                  <tr>
+                    <th scope="col">VehicleType</th>
+                    <th scope="col">Slot</th>
+                    <th scope="col">Entry Time</th>
+                    <th scope="col">Exit Time</th>
+                    <th scope="col">Total Amount</th>
+                    <th scope="col">Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="tableBody">
+                 
+                </tbody>
+            </table>
+        </div>
+        
+    </body>
+</html>
